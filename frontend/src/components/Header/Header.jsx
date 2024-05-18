@@ -1,6 +1,6 @@
 import {useEffect, useRef,useContext} from 'react';
 import logo from '../../assets/images/logo.png';
-import userImg from '../../assets/images/avatar-icon.png';
+//import userImg from '../../assets/images/avatar-icon.png';
 import {NavLink, Link} from 'react-router-dom';
 import {BiMenu} from "react-icons/bi";
 import { authContext } from '../../context/AuthContext';
@@ -86,7 +86,7 @@ const Header = () => {
                            <figure className='w-[35px] h-[35px] rounded-full'>
                              <img src={user ?.photo} className='w-full rounded-full' alt='' />
                            </figure>
-                           <h2>{user?.name}</h2>
+                           {/* <h2>{user?.name}</h2> */}
                          </Link>
                        </div>
                        :
