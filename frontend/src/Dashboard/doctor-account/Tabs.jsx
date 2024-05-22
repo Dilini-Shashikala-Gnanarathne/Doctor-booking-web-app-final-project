@@ -23,14 +23,14 @@ const Tabs = ({tab, setTab}) => {
         <button onClick={()=>setTab('settings')} 
         className={`${tab==='settings'? "bg-indigo-100 text-primaryColor":'bg-transparent text-headingColor'} w-full btn mt-0 rounded-md`}>Settings</button>  
 
-        <div className="mt-[100px] w-full">
-           <button className='w-full bg-[#181A1E] p-3 text-[16px] leading-7 rounded-md text-white'>
-            LOGOUT
-           </button>
-           <button className='w-full bg-red-600 mt-4 p-3 text-[16px] leading-7 rounded-md text-white'>
-            Delete account
-           </button>
-        </div>      
+<div className="mt-[50px] md:mt-[100px]">
+                  <button onClick={handleLogout} className="w-full bg-[#181A1E] p-3 text-[16px] leading-7 rounded-md text-white">
+                     Logout
+                  </button>
+                  <button className="w-full bg-red-600 mt-4 p-3 text-[16px] leading-7 rounded-md text-white">
+                     Delete acoount
+                  </button>
+               </div>     
        
       </div>
     </div>
