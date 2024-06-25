@@ -61,9 +61,7 @@ export const getSingleDoctor = async (req,res) => {
     }
 };
 
-export const getAllDoctor = async (req,res) => {
-
-     
+export const getAllDoctor = async (req,res) => {   
     try{
 
         const {query} = req.query
